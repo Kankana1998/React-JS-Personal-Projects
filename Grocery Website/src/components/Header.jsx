@@ -8,11 +8,11 @@ function Header() {
 const [searchVal, setSearchVal]  = useState("")
   const handleMatch = (e) => {
     e.preventDefault();
-    
+
   }
     const [toggle, setToggle] = useState(false);
   return (
-    <div className="bg-gray-800 p-4">
+    <div className="bg-slate-900 p-4">
       <div className="max-w-[-1240px] flex justify-between items-center py-[15px] mx-auto">
         <div className="text-3xl font-bold">
           <img
