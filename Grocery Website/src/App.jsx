@@ -6,17 +6,28 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Newsletter from './components/Newsletter'
 import Plans from './components/Plans'
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 function App() {
  
 
   return (
     <>
-     <Header /> 
-     <Banner />
-     <Newsletter /> 
-     <Plans />
-     <Footer /> 
+    <BrowserRouter>
+    <Header /> 
+    <Routes>
+    <Route path='/' element={<Banner />}/>
+    <Route path='/newsletter' element={ <Newsletter /> }/>
+    <Route path='/plans' element={<Plans />}/>
+    <Route path='/footer' element={<Footer /> }/>
+
+    </Routes>
+    </BrowserRouter>
+    
+    
+    
+     
+     
+     
     </>
 
   )
