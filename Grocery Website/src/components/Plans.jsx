@@ -2,7 +2,7 @@ import React from 'react'
 
 function Plans() {
   return (
-    <div className='py-[100px] px-2 bg-gray-800'>
+    <div id='plans' className='py-[100px] px-2 bg-gray-800'>
       <p className='uppercase text-bold font-serif text-2xl md:pl-[45%] mb-2 text-white'>How it Works</p>
         <div className='max-w-[1240px] mx-auto md:grid grid-cols-3 gap-6'>
             <div className='shadow-xl h-[500px] my-2  hover:scale-105 duration-500 flex-col bg-gray-100 '>

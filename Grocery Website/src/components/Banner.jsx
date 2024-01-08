@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 function Banner() {
   return (
    
-    <div className='bg-gray-800 w-full py-[100px]'>
+    <div id='banner' className='bg-[url(`../src/assets/fruits/Mask group.png`)] w-full py-[100px]'>
       
     <div className='max-w-[1240px] mx-auto my-[100px] text-center font-bold mt-4 md:grid grid-cols-2'>
         
@@ -23,7 +23,7 @@ function Banner() {
                
         </div>
     </div>
-        <img className='md:float-right md:w-full 2xl:ml-40' src="src/assets/36448267-removebg-preview.png" alt="" />
+        <img className='md:float-right md:w-full 2xl:ml-40 bg-opacity-25' src="src/assets/fruits/Mask group.png" alt="" />
 
   </div>
     </div>

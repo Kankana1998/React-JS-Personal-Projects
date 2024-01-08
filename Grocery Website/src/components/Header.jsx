@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
 import { IoMenuSharp } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
-
+import {NavLink } from 'react-router-dom';
+import Banner from './Banner';
+import Footer from './Footer';
 function Header() {
-
+const [searchVal, setSearchVal]  = useState("")
+  const handleMatch = (e) => {
+    e.preventDefault();
+    
+  }
     const [toggle, setToggle] = useState(false);
   return (
     <div className="bg-gray-800 p-4">
@@ -17,11 +23,14 @@ function Header() {
         </div>
         <div className='md:w-2/4 flex items-center'>
           <input 
-            type="text"
+            type="search"
+            value={searchVal}
+            onChange={(e) => setSearchVal(e.target.value)}
             placeholder="Search..."
             className='w-full rounded h-10 text-[#272343] mr-2'
+
           />
-          <button className='bg-[#ffd803] ml-2 text-white p-3 rounded'>Search</button>
+          <button onClick={handleMatch} className='bg-[#ffd803] ml-2 text-white p-3 rounded'>Search</button>
         </div>
         {toggle ? (
           <IoIosClose
@@ -37,11 +46,11 @@ function Header() {
         )}
 
         <ul className="hidden md:flex text-white gap-10 font-serif">
-          <li>Home</li>
-          <li>Categories</li>
-          <li>Download App</li>
-          <li>About Us</li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#experts">Categories</a></li>
+          <li><a href="#Newsletter">Download App</a></li>
+          <li><a href="#plans">About Us</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
 
         {/* Responsive Menu */}
