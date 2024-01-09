@@ -2,29 +2,29 @@ import React from 'react'
 import { GiFruitBowl } from "react-icons/gi";
 function Experts() {
   return (
-    <div className='mb-40'>
-      <h2 className='pt-2 uppercase text-bold font-serif text-2xl md:pl-[40%] mb-2'>Browse by Category</h2>
-      <div id='experts' className='max-w-[1240px] mx-auto my-4 h-[300px] grid grid-cols-2'>
+    <div className=''>
+      <h2 className='pt-2 uppercase text-bold font-serif text-2xl sm:ml-6 md:pl-[40%] mb-2'>Browse by Category</h2>
+      <div id='experts' className='max-w-[1240px] mx-auto my-4 '>
        
        
-      <div className='w-[1200px] py-2 mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 sm:justify-center md:place-items-center'>
+      <div className='grid md:grid-cols-3 md:h-auto sm:grid-cols-1 gap-2 md:mt-2 mx-auto'>
       
-        <div className='bg-[white] py-5 text-center hover:cursor-pointer'>
+        <div className='bg-[white] rounded-md flex items-center justify-center hover:cursor-pointer'>
         <img src="src/assets/fruits/milk.png" className='' alt="" />
         </div>
-        <div className='bg-[white] py-5 text-center hover:cursor-pointer'>
+        <div className='bg-[white] rounded-md flex items-center justify-center text-center hover:cursor-pointer'>
         <img src="src/assets/fruits/fish.png" className='' alt="" />
         </div>
-        <div className='bg-[white] py-5 text-center hover:cursor-pointer'>
+        <div className='bg-[white] rounded-md flex items-center justify-center hover:cursor-pointer'>
         <img src="src/assets/fruits/shalgom.png" className='' alt="" />
         </div>
-        <div className='bg-[white] py-5 text-center hover:cursor-pointer'>
+        <div className='bg-[white] rounded-md flex items-center justify-center hover:cursor-pointer'>
         <img src="src/assets/fruits/mushro.png" className='' alt="" />
         </div>
-        <div className='bg-[white] py-5 text-center hover:cursor-pointer'>
+        <div className='bg-[white] rounded-md flex items-center justify-center hover:cursor-pointer'>
         <img src="src/assets/fruits/Natural.png" className='' alt="" />
         </div>
-        <div className='bg-[white] py-5 text-center hover:cursor-pointer'>
+        <div className='bg-[white] rounded-md flex items-center justify-center hover:cursor-pointer'>
         <img src="src/assets/fruits/vector8.png" className='' alt="" />
         </div>
        

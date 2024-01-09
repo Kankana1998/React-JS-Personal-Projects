@@ -10,10 +10,11 @@ function Newsletter() {
 order now! </h1>
                 <span>Trusted by millions of shoppers in Bangalore, Delhi-NCR, Hyderabad, Mumbai, Chennai, Pune & other cities</span>
             </div>
-            <div className='md:grid grid-col-2'>
+            <div className='grid grid-cols-1 gap-2'>
                 
-                <button className='bg-black mb-2 w-full text-white p-3 rounded pr-2 '>Download on the <FaApple alignmentBaseline='row'/> App Store</button>
-                <button className='bg-black w-full mb-2 text-white p-3 rounded pl-2'>Get it on <FaGooglePlay /> Google Play</button>
+                <button className='relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 '>Download on the <FaApple />  App Store</button>
+
+                <button className='relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 '>Get it on <FaGooglePlay /> Google Play</button>
               
             </div>
 
