@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css'
 import Result from './components/Result'
 import axios from 'axios';
+import SearchIcon from "./search.svg";
 
 const APIURL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
 const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
@@ -40,14 +41,19 @@ function App() {
 
   return (
   
-      <div className='max-w-[1240px] shadow-xl min-h-[400px] mx-auto p-3'>
 
-        <input type="search" value={search} onChange={changeTheSearch} className='w-full border border-black rounded text-slate-800 p-4' />
-        {
-          movies.length === 0 ? <div className="text-3xl text-center mt-2"> Loading... </div> : <Result movies={movies}/>
-        }
+      <div className='app'>
+        <h1 className='heading'>Movie Couch</h1>
+        <div className='search'>
+        <input value={search} onChange={changeTheSearch} />
+
+        <img src={SearchIcon} alt="search movies" onClick={() => searchMovies(changeTheSearch)} />
         
-      </div>
+        </div>
+        {
+          movies.length === 0 ? <div className="results"> Loading... </div> : <Result movies={movies}/>
+        }
+    </div>
     
   );
 }
