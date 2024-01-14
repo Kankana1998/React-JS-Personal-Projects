@@ -20,8 +20,8 @@ const Box = (props) => {
     <div className='shadow min-h-[200px] mt-3 pb-1'>
         <img src={IMGPATH + props.image} alt=" No Image"  className='w-full'/>
         <div className='flex justify-between items-center px-2'>
-        <span className='text-2xl'>{props.title}</span>
-        <span className='text-xl text-yellow-500 font-bold'>{props.rating}</span>
+        <span className='text-2xl text-white'>{props.title}</span>
+        <span className='text-xl text-white font-bold'>{props.rating}</span>
     </div>
     </div>
 
