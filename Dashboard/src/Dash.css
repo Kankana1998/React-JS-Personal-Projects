@@ -1,5 +1,5 @@
 .paddingall{
-    padding: 10px 10px 2px;
+    padding: 10px;
 }
 
 .pricetitle{
@@ -11,6 +11,28 @@
 }
 
 .iconstyle{
-    margin-top: 20px;
-    margin-left: 20px;
+    padding: 20px;
+    color: white;
+    
+}
+.iconstyleBlack{
+    padding: 20px;
+    color: black;
+}
+
+.gradient{
+    
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.gradientlight{
+    background: rgb(53, 138, 148);
+    background: linear-gradient(158deg, rgba(53, 138, 148,1) 0%, rgba(91,180,96,1) 100%);
+}
+
+.bgColor{
+    min-height: 100vh;
+    background: #ECEFF1;
+    background: linear-gradient(158deg, rgb(224, 224, 224) 0%, rgb(233,237,254) 100%);
 }

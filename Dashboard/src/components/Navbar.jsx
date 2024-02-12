@@ -163,7 +163,7 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" elevation={0} sx={{backgroundColor: "#ffffff", color: "#2f2f2f"}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -181,7 +181,7 @@ export default function Navbar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            Admin Dashboard
           </Typography>
           <Search>
             <SearchIconWrapper>
