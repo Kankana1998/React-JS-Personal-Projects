@@ -2,16 +2,17 @@ import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Box from '@mui/material/Box';
 import Navbar from '../components/Navbar'
+import List from '../settings/List';
 
 function Settings() {
   return (
     <>
     <Navbar />
-    <Box height={30}/>
+    <Box height={70}/>
     <Box sx={{ display: 'flex' }}>
     <Sidebar/>
     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-    <h1>Settings</h1>
+    <List />
     </Box>
 </Box>
 </>

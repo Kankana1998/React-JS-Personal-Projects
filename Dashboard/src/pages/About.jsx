@@ -12,7 +12,7 @@ function About() {
     <>
      <div className="bgColor">
      <Navbar />
-    <Box height={90}/>
+    <Box height={45}/>
     <Box sx={{ display: 'flex' }}>
     <Sidebar/>
     <Box component="main" sx={{ flexGrow: 1, p: 3 }}>

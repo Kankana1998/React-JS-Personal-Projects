@@ -28,6 +28,9 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Swal from "sweetalert2";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import Skeleton from '@mui/material/Skeleton';
+
+
 const empCollectionRef = collection(db, "Products");
 
 
@@ -87,6 +90,9 @@ const deleteApi = async (id) => {
   };
 
   return (
+    <>
+    
+   
     <Paper sx={{ width: '100%', overflow: 'hidden' }}>
             <Typography
             gutterBottom
@@ -207,6 +213,29 @@ const deleteApi = async (id) => {
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
-    </Paper>
-  );
+    </Paper >
+    
+
+   {rows.length == 0 && (
+      <>
+      <Paper sx={{ width: '100%', overflow: 'hidden', padding: '12px' }}>
+      <Box height={20} />
+      <Skeleton variant="rectangular" width={'100%'} height={30} />
+      <Box height={40} />
+      <Skeleton variant="rectangular" width={'100%'} height={60} />
+      <Box height={20} />
+      <Skeleton variant="rectangular" width={'100%'} height={60} />
+      <Box height={20} />
+      <Skeleton variant="rectangular" width={'100%'} height={60} />
+      <Box height={20} />
+      <Skeleton variant="rectangular" width={'100%'} height={60} />
+      <Box height={20} />
+      <Skeleton variant="rectangular" width={'100%'} height={60} />
+      </Paper>
+      </>
+ 
+ ) }
+ </>
+ );
 }
+  
