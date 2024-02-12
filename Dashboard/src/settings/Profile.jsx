@@ -7,12 +7,12 @@ import { CardContent } from '@mui/material';
 function Profile() {
   return (
 
-    <Grid container>
+    <Grid>
     <Stack spacing={2} direction='row'>
     <Card>
         
           <CardContent>
-           <TextField id="standard-basic" label="K Nath" variant="standard" disabled />
+           <TextField id="standard-basic" label="J Doe" variant="standard" disabled />
            <TextField id="standard-basic" label="code@adminUI.com" variant="standard" disabled />
            <TextField id="standard-basic" label="(+919090909090" variant="standard" disabled />
            <TextField id="standard-basic" label="code@newjersey.com" variant="standard" disabled />
