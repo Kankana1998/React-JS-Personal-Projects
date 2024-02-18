@@ -33,9 +33,9 @@ const signUserOut = async () => {
 return (
 <>
   {room ? (<Chat room={room} />) :(
-    <div className='text-white mt-40 ml-20 h-[50vh] w-[75vw] flex flex-col justify-center items-center bg-gradient-to-r from-amber-200 to-yellow-400 rounded-2xl'>
+    <div className='text-white mt-40 ml-20 h-[50vh] w-[75vw] flex flex-col justify-center items-center bg-gradient-to-r from-amber-200 to-yellow-400 rounded-2xl backdrop-contrast-10'>
       <label className='text-4xl text-white font-semibold text-center mb-10 block'>Enter Room Name: </label>
-      <input ref={roomInputRef} className='block w-72 py-2.3 mb-6 rounded-lg text-black'/>
+      <input ref={roomInputRef} className='block w-72 py-2.3 mb-6 rounded-lg p-3 text-black'/>
       <button className='text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-5 ptl' onClick={() => setRoom(roomInputRef.current.value)}>Enter Chat</button>
     </div>
   )}

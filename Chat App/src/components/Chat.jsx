@@ -47,7 +47,7 @@ export const Chat = ({ room }) => {
   };
 
   return (
-    <div className="mt-40 ml-20  w-[75vw] flex flex-col justify-center items-center h-[60vh] rounded-md border-4 border-black-500 text-black bg-transparent backdrop-filter">
+    <div className="mt-20 ml-20  w-[75vw] flex flex-col justify-center items-center h-[80vh] rounded-md border-4 border-black-500 text-black bg-rose-600  bg-opacity-20 bg-transparent backdrop-contrast-30">
       <div className="">
         <h1 className="font-semibold text-fuchsia-950">Welcome to: {room.toUpperCase()}</h1>
       </div>
@@ -65,10 +65,10 @@ export const Chat = ({ room }) => {
           type="text"
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
-          className="block p-3 w-72  mb-6 rounded-lg text-black"
+          className="block p-3  w-72  mb-4 rounded-lg text-black"
           placeholder="Type your message here..."
         />
-        <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-5 ptl">
+        <button type="submit" className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mt-5 ml-[14vw] ptl">
           Send
         </button>
       </form>
